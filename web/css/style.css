@@ -1,9 +1,18 @@
-@media screen and (min-width: 669px) {
+/* 650px and above - font size increase */
+@media screen and (min-width: 650px) {
     :root {
       font-size: 16px !important;
     }
   }
+
+  /* 575px and below - hide macbook */
+  @media screen and (max-width: 575px) {
+    [id=mac] {
+        visibility: hidden;
+    }
+  }
   
+  /* 769px and below - decrease font size, logo and project carousel center */
   @media screen and (max-width: 768px) {
     :root {
       font-size: 14px !important;
@@ -13,14 +22,16 @@
         height: 50px;
     }
 
-    [id=mac] {
-        visibility: hidden;
-    }
-
     .owl-item.active.center {
         transform: scale(0.8, 0.8) !important;
         z-index: 100;
         transition: 700ms ease;
+    }
+    .portrait-background {
+        transform: scale(0.75, 0.75) !important;
+        text-align: center;
+        padding-top: 5% !important;
+
     }
   }
 
@@ -125,7 +136,7 @@ html {
 .discover-button {
     color: var(--text-primary);
     background-color: white;
-    border-radius: 20px;
+    border-radius: 25px;
     font-weight: bold;
     font-size: 0.9em;
     border: none;
@@ -144,7 +155,7 @@ html {
 
 .title-2 {
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 .item {
@@ -170,10 +181,6 @@ html {
     position: absolute;
     top: 40%;
     right: -90px;
-}
-
-.owl-dots {
-    padding-top: 20px;
 }
 
 .owl-item.active {
@@ -204,6 +211,27 @@ html {
 /* ---------------------- About Section ---------------------- */
 .double-gradient {
     background: linear-gradient(180deg, rgba(239, 223, 255, 0) 0%, #EFDFFF 50%, rgba(239, 223, 255, 0) 100%);
+}
+
+.portrait-background {
+    position: relative;
+    padding-top: 25%;
+    z-index: 0;
+    height: 90%;
+    padding-left: 10%;
+}
+
+.resume {
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+    background: linear-gradient(90deg, #5639C7 -38.89%, #706DF9 100%);
+}
+
+.resume:hover{
+    text-decoration: none;
+    color: white;
 }
 
 /* ---------------------- Skills Section ---------------------- */
