@@ -1,0 +1,155 @@
+/* 650px and above - font size increase */
+@media screen and (min-width: 650px) {
+    :root {
+      font-size: 16px !important;
+    }
+  }
+
+  /* 575px and below*/
+  @media screen and (max-width: 575px) {
+    [id=mac] {
+        visibility: hidden;
+        height: 0 !important;
+    }
+  }
+  
+  /* 768px and below */
+  @media screen and (max-width: 768px) {
+    :root {
+      font-size: 14px !important;
+    }
+  }
+
+  @media screen and (max-width: 920px) {
+    .flashcards-button {
+        background-color: #89DAD5 !important;
+        color: white !important;
+    }
+
+    .laze-button {
+        background-color: #3F0072 !important;
+        color: white !important;
+    }
+  }
+
+  /* 1050px and below  */
+  @media screen and (max-width: 1050px) {
+    .desc-background {
+        background: rgba(231, 164, 141, 0.6);
+    }
+
+    .web-desc-background {
+        background: rgba(99, 83, 224, 0.6);
+    }
+  }
+
+/* ---------------------- General ---------------------- */
+:root {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 16px; 
+    --text-primary: #000;
+    --text-secondary: #6E68F5;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+    min-height: 400px;
+}
+
+
+/* ---------------------- Project Details ---------------------- */
+.detail-background {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100vw;
+}
+
+.back {
+    position: relative;
+    z-index: 100;
+    width: 30px;
+}
+
+.project-logo {
+    width: 70px;
+    height: 70px;
+}
+
+#mac {
+    width: 90%;
+}
+
+.discover-button {
+    color: var(--text-primary);
+    background-color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+}
+
+.discover-button:hover {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+.screenshot {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+/* ---------------------- Gallery ---------------------- */
+.owl-prev {
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.owl-next {
+    position: absolute;
+    top: 35%;
+    right: 0;
+}
+
+.item {
+    position: relative;
+    border-radius: 25px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.modal-item {
+    height: 75vh;
+}
+
+.iphone {
+    position: relative;
+    height: 55vh;
+    z-index: 1;
+}
+
+.iphone2 {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    height: 50vh;
+}
+
+.desc-background {
+    border-radius: 25px;
+}
+
+.web-desc-background {
+    border-radius: 25px;
+}

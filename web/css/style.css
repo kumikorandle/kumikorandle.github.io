@@ -5,14 +5,26 @@
     }
   }
 
-  /* 575px and below - hide macbook */
+  /* 575px and below*/
   @media screen and (max-width: 575px) {
     [id=mac] {
         visibility: hidden;
+        height: 0 !important;
+    }
+    [id=skills-section] {
+        height: auto !important;
+    }
+
+    .icon {
+        visibility: hidden;
+    }
+
+    .footer {
+        height: 60vh !important;
     }
   }
   
-  /* 769px and below - decrease font size, logo and project carousel center */
+  /* 769px and below */
   @media screen and (max-width: 768px) {
     :root {
       font-size: 14px !important;
@@ -27,11 +39,17 @@
         z-index: 100;
         transition: 700ms ease;
     }
-    .portrait-background {
-        transform: scale(0.75, 0.75) !important;
+    
+  }
+
+  /* 1050px and below  */
+  @media screen and (max-width: 1050px) {
+      .contact-box {
+          width: 40vw !important;
+      }
+      .portrait-background {
         text-align: center;
         padding-top: 5% !important;
-
     }
   }
 
@@ -164,11 +182,12 @@ html {
     border-radius: 50%;
     padding-bottom: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .owl-stage-outer {
     overflow-y: visible;
-    padding: 50px 0;
+    padding: 5% 0;
 }
 
 .owl-prev {
@@ -200,25 +219,14 @@ html {
     height: 100%;
 }
 
-.project-logo {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    bottom: -30px;
-    background-color: blue;
-}
-
 /* ---------------------- About Section ---------------------- */
 .double-gradient {
     background: linear-gradient(180deg, rgba(239, 223, 255, 0) 0%, #EFDFFF 50%, rgba(239, 223, 255, 0) 100%);
 }
 
 .portrait-background {
-    position: relative;
-    padding-top: 25%;
-    z-index: 0;
-    height: 90%;
-    padding-left: 10%;
+    width: 90%;
+    padding-left: 15%;
 }
 
 .resume {
@@ -240,6 +248,38 @@ html {
 .gradient {
     background: linear-gradient(180deg, rgba(239, 223, 255, 0) 0%, #EFDFFF 100%);
 }
+
+.contact-background {
+    background-image: url("../images/contact-background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 61vh;
+}
+
+.contact-box {
+    width: 25%;
+    height: 13vh;
+    text-align: left;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.social {
+    color: black;
+    font-weight: 500;
+}
+
+.social:hover {
+    text-decoration: none;
+    color: black;
+}
+
 
 /* ---------------------- Footer ---------------------- */
 .footer {
@@ -274,4 +314,5 @@ html {
 
 .socials {
     height: 30px;
+    display: inline-block;
 }
