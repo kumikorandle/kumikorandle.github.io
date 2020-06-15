@@ -15,7 +15,8 @@
         <link rel="stylesheet" href="../css/project-details.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <title>Flashcards</title>
     </head>
     <div class="container-fluid section">
@@ -29,11 +30,11 @@
         <div class="row" style="height: 50vh;">
             <img class="detail-background" src="../images/flashcards-background.svg">
 
-            <div class="col-sm-6 pl-5 text-right">
+            <div class="col-sm-6 pl-5 text-right" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
                 <img id="mac" class="iphone" src="../images/back-pixel.svg">
                 <img id="mac" class="iphone2" src="../images/flashcards-pixel.svg">
             </div>
-            <div class="col-sm-6 text-center px-5">
+            <div class="col-sm-6 text-center px-5" data-aos="fade-left" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
                 <div class="row pt-3">
                     <div class="col-sm-12">
                         <img src="../images/flashcards-logo.svg"  style="width: 40%;">
@@ -55,7 +56,7 @@
             </div>
         </div>
         <!-- Gallery -->
-        <div class="row pt-4 mt-4">
+        <div class="row pt-4 mt-4" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
             <div class="col-sm-12">
                 <div id="main-carousel" class="owl-carousel owl-theme px-4">
                     <div class="item" id="0" >
@@ -101,8 +102,10 @@
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script type="text/javascript">
+        AOS.init();
         var identity = 0;
         
         // Main carousel
