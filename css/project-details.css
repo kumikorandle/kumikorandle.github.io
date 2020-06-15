@@ -112,12 +112,14 @@ html {
 /* ---------------------- Gallery ---------------------- */
 .owl-prev {
     position: absolute;
+    z-index: 100;
     top: 35%;
     left: 0;
 }
 
 .owl-next {
     position: absolute;
+    z-index: 100;
     top: 35%;
     right: 0;
 }
