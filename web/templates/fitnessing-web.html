@@ -13,8 +13,8 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="../css/project-details.css">
-        <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
         
         <title>Fitnessing - Web</title>
     </head>
@@ -146,7 +146,7 @@
     
     <!-- Optional JavaScript -->
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    
-    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script type="text/javascript">
         var identity = 0;
@@ -173,30 +173,7 @@
         });
 
         $('#main-carousel .item a').on('click', function() {
-            // var arr = [];
-            // var theSrc = $(this).find('img').attr('src');
             identity = $(this).parent().attr('id');
-            // var owlModal = $('#modal-carousel');
-            // owlModal.empty();
-            // var item = $('<div>', {id : identity, 'class' : 'item'}).appendTo(owlModal);
-            // $('<img>', {'class' : 'screenshot', src : theSrc}).appendTo(item);
-            // arr.push(identity);
-
-            // // Add others images
-            // $('#main-carousel .item a').each(function (i,e) {
-            //     var otherSrc = $(e).find('img').attr('src');
-            //     var newIdentity = $(this).parent().attr('id');
-            //     var newItem = $('<div>', {id : newIdentity, 'class' : 'item'});
-            //     $('<img>', {'class' : 'screenshot', 'src' : otherSrc}).appendTo(newItem);
-
-            //     // If item not already in modal, add to gallery
-            //     if ($.inArray(newIdentity, arr) == -1) {
-            //         owlModal.append(newItem);
-            //         arr.push(newIdentity);
-            //     }
-            // });
-
-
         });
 
         $('#gallery-modal').on('shown.bs.modal', function () {
