@@ -18,6 +18,14 @@
     :root {
       font-size: 14px !important;
     }
+
+    .owl-prev {
+        top: 25% !important;
+    }
+
+    .owl-next {
+        top: 25% !important;
+    }
   }
   
   /* 1050px and below  */
