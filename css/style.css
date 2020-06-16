@@ -87,7 +87,6 @@ html {
 .section {
     height: 100vh;
     min-height: 400px;
-    overflow: hidden;
 }
 
 .fix-height {
@@ -225,6 +224,10 @@ html {
 }
 
 /* ---------------------- About Section ---------------------- */
+#about-section {
+    overflow-x: hidden;
+}
+
 .double-gradient {
     background: linear-gradient(180deg, rgba(239, 223, 255, 0) 0%, #EFDFFF 50%, rgba(239, 223, 255, 0) 100%);
 }
