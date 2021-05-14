@@ -30,48 +30,52 @@
             gtag('config', 'UA-165302440-1');
         </script>
     </head>
-    <div class="container-fluid section">
-        <!-- App preview -->
-        <div class="row">
-            <div class="col-sm-12 text-left">
-                <a href="../index.html"><img class="back mt-4 ml-3 pb-0" src="../images/back.svg"></a>
+    <body class="laze-mobile">
+    <div class="container-fluid section px-0">
+        <div class="laze-background">
+            <!-- App preview -->
+            <div class="row px-0 mx-auto">
+                <div class="col-sm-12 text-left">
+                    <a href="../index.html"><img class="back mt-4 ml-3 pb-0" src="../images/back.svg"></a>
+                </div>
             </div>
-        </div>
-        <!-- App Info -->
-        <div class="row" style="height: 50vh;">
-            <img class="detail-background" src="../images/laze-background.svg">
-            <div class="col-sm-6 pt-4 pl-5" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
-                <img id="mac" class="macbook" src="../images/macbook-laze.svg">
-            </div>
-            <div class="col-sm-6 text-center px-3" data-aos="fade-left" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
-                <div class="laze-desc-background p-4">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <img src="../images/laze-logo.png" style="width: 30%;">
+            <!-- App Info -->
+            <div class="row px-0 mx-auto" >
+                <!-- <img class="detail-background" src="../images/laze-background.svg"> -->
+                <div class="col-sm-6 pt-4 pl-5" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                    <img id="mac" class="macbook" src="../images/macbook-laze.svg">
+                </div>
+                <div class="col-sm-6 text-center px-3 d-flex align-items-center" data-aos="fade-left" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                    <div class="px-3 pb-5">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <img src="../images/laze-logo.png" style="width: 30%;">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p>
-                                Laze is an application containing a live and dynamic GPS map overview of Wilfrid Laurier University. 
-                                It allows users to pin points of interest, such as study spaces, restaurant lines, parking spots, etc - 
-                                all of which are visible to all other users of the application. These pins enables users to view indicated 
-                                information such as the length of a line or the availability of a parking spot nearby. 
-                            </p>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p>
+                                    Laze is an application containing a live and dynamic GPS map overview of Wilfrid Laurier University. 
+                                    It allows users to pin points of interest, such as study spaces, restaurant lines, parking spots, etc - 
+                                    all of which are visible to all other users of the application. These pins enables users to view indicated 
+                                    information such as the length of a line or the availability of a parking spot nearby. 
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-sm-12">
-                            <a href="https://github.com/lauriercp317/laze" target="_blank" class="discover-button laze-button py-3 px-4">VIEW ON GITHUB</a>
+                        <div class="row mt-4">
+                            <div class="col-sm-12">
+                                <a href="https://github.com/lauriercp317/laze" target="_blank" class="discover-button laze-button py-3 px-4">VIEW ON GITHUB</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
         <!-- Gallery -->
-        <div class="row pt-4 mt-4" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+        <div class="row pt-4 px-0 mx-auto" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
             <div class="col-sm-12">
-                <div id="main-carousel" class="owl-carousel owl-theme px-4 pt-4 mt-5">
+                <div id="main-carousel" class="owl-carousel owl-theme px-4 pt-4">
                     <div class="item" id="0" >
                         <a data-toggle="modal" data-target="#gallery-modal">
                             <img src="../images/laze-login.svg" class="screenshot"/>
@@ -191,7 +195,7 @@
             navText: ["<img src='../images/laze-left.svg'>", "<img src='../images/laze-right.svg'>"],
             responsive:{
                 0:{
-                    items:2,
+                    items:1,
                 },
                 768:{
                     items:3,

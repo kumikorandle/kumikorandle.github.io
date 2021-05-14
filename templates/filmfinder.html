@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/project-details.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <title>FilmFinder</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165302440-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-165302440-1');
+        </script>
+    </head>
+    <body class="background-mobile">
+        <div class="container-fluid section px-0">
+            <div class="background">
+                <!-- App preview -->
+                <div class="row px-0 mx-auto">
+                    <div class="col-sm-12 text-left">
+                        <a href="../index.html"><img class="back mt-4 ml-3 pb-0" src="../images/back.svg"></a>
+                    </div>
+                </div>
+                <!-- App Info -->
+                <div class="row px-0 mx-auto pb-3">
+                    <!-- <img class="detail-background" src="../images/filmfinder-background.svg"> -->
+                    <div class="col-sm-6 pt-4 pl-5" data-aos="fade-right" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                        <img id="mac" class="macbook" src="../images/macbook-filmfinder.svg">
+                    </div>
+                    <div class="col-sm-6 text-center pt-0 px-3 d-flex align-items-center pb-2" data-aos="fade-left" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                        <div class="filmfinder-desc-background px-2 pb-5">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <img src="../images/filmfinder-logo.svg" class="project-logo">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <h1  style="color: white; font-weight: normal; font-family: 'Poppins', sans-serif !important;">film<strong>finder</strong></h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <p style="color:white;">
+                                        FilmFinder is an movie search engine which provides users with movies to suit their interests. It is a web-based
+                                        application where users can search for movies and will be provided with recommendations based on the searches they
+                                        make and their favourite genres. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm-12">
+                                    <a href="https://github.com/jackson097/FilmFinder" target="_blank" class="discover-button py-3 px-4">VIEW ON GITHUB</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery -->
+            <div class="row pt-2 px-0 mx-auto" data-aos="fade-up" data-aos-once="false" data-aos-duration="1000" data-aos-delay="100">
+                <div class="col-sm-12">
+                    <div id="main-carousel" class="owl-carousel owl-theme px-4 pt-4">
+                        <div class="item" id="0" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-register1.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="1" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-register2.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="2">
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-login.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="3">
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-search.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="4" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-search-type.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="5" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-search-no-type.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="6" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-search-results.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="7" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-movie.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="8" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-account.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                        <div class="item" id="9" >
+                            <a data-toggle="modal" data-target="#gallery-modal">
+                                <img src="../images/filmfinder-recommendations.svg" class="screenshot"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- modalGallery -->
+            <div class="modal" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="gallery-modal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="modal-carousel" class="owl-carousel owl-theme">
+                                <div class="modal-item" id="0" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-register1.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="1" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-register2.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="2">
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-login.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="3">
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-search.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="4" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-search-type.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="5" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-search-no-type.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="6" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-search-results.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="7" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-movie.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="8" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-account.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                                <div class="modal-item" id="9" >
+                                    <a data-toggle="modal" data-target="#gallery-modal">
+                                        <img src="../images/filmfinder-recommendations.svg" class="screenshot"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- /modalGallery -->
+        </div>
+    
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script type="text/javascript">
+        AOS.init();
+        var identity = 0;
+        
+        // Main carousel
+        $('#main-carousel').owlCarousel({
+            loop:false,
+            responsiveClass: true,
+            nav: true,
+            dots: true,
+            margin: 10,
+            navText: ["<img src='../images/filmfinder-left.svg'>", "<img src='../images/filmfinder-right.svg'>"],
+            responsive:{
+                0:{
+                    items:1,
+                },
+                768:{
+                    items:3,
+                },
+                1050:{
+                    items: 4,
+                }
+            }
+        });
+
+        $('#main-carousel .item a').on('click', function() {
+            identity = $(this).parent().attr('id');
+        });
+
+        $('#gallery-modal').on('shown.bs.modal', function () {
+            $("#modal-carousel").owlCarousel({
+                singleItem: true,
+                loop: false,
+                nav: true,
+                dots: true,
+                navText: ["<img class='modal-left' src='../images/filmfinder-left.svg'>", "<img class='modal-right' src='../images/filmfinder-right.svg'>"],
+                responsive:{
+                0:{
+                    items:1,
+                },
+            }
+            });
+
+            $("#modal-carousel").trigger("to.owl.carousel", [identity, 1, true]);
+            console.log($(".modal-left").parent().css("top", "45%"));
+            console.log($(".modal-left").parent().css("left", "-5%"));
+            console.log($(".modal-right").parent().css("top", "45%"));
+            console.log($(".modal-right").parent().css("right", "-5%"));
+
+
+        });
+        
+        $('#modal-carousel').on('hidden.bs.modal', function () {
+            $('#modal-carousel').trigger("destroy-owl-carousel");
+        });
+
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    </body>
+</html>

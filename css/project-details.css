@@ -8,8 +8,47 @@
   /* 575px and below*/
   @media screen and (max-width: 575px) {
     [id=mac] {
-        visibility: hidden;
+        display: none;
         height: 0 !important;
+    }
+    .background {
+        background-image: none !important;
+    }
+
+    .fitnessing-background {
+        background-image: none !important;
+    }
+
+    .fitnessing-web-background {
+        background-image: none !important;
+    }
+
+    .flashcards-background {
+        background-image: none !important;
+    }
+
+    .laze-background {
+        background-image: none !important;
+    }
+
+    .background-mobile {
+        background-image: linear-gradient(180deg, #820101 0%, #B00101 50.00%, #820101 100%) !important;
+    }
+
+    .fitnessing-background-mobile {
+        background-color: #FF786C;
+    }
+
+    .fitnessing-web-background-mobile {
+        background-color: #260978;
+    }
+
+    .flashcards-background-mobile {
+        background-color: rgba(137, 218, 213, 0.6);
+    }
+
+    .laze-mobile {
+        background: #C5A8E7;
     }
   }
   
@@ -19,33 +58,21 @@
       font-size: 14px !important;
     }
 
-    .owl-prev {
+    /* .owl-prev {
         top: 25% !important;
     }
 
     .owl-next {
         top: 25% !important;
-    }
+    } */
   }
   
   /* 1050px and below  */
   @media screen and (max-width: 1050px) {
     .desc-background {
-        background: rgba(231, 164, 141, 0.6);
+        color: black !important;
     }
 
-    .web-desc-background {
-        background: rgba(99, 83, 224, 0.6);
-    }
-
-    .flashcards-desc-background {
-        background: rgba(137, 218, 213, 0.6);
-    }
-
-    .laze-desc-background {
-        background: rgba(57, 37, 133, 0.6);
-        color: white !important;
-    }
   }
 
 /* ---------------------- General ---------------------- */
@@ -91,6 +118,7 @@ html {
 
 #mac {
     width: 90%;
+    height: 50vh;
 }
 
 .discover-button {
@@ -112,6 +140,46 @@ html {
     width: 100%;
     height: 100%;
     border-radius: 25px;
+}
+
+.background {
+    background-image: url("../images/filmfinder-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.fitnessing-background {
+    background-image: url("../images/fitnessing-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.fitnessing-web-background {
+    background-image: url("../images/fitnessing-web-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.flashcards-background {
+    background-image: url("../images/flashcards-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.laze-background {
+    background-image: url("../images/laze-background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 /* ---------------------- Gallery ---------------------- */
@@ -142,8 +210,9 @@ html {
 
 .iphone {
     position: relative;
-    height: 55vh;
+    height: 55vh !important;
     z-index: 1;
+    left: 5%;
 }
 
 .iphone2 {
@@ -166,5 +235,9 @@ html {
 }
 
 .flashcards-desc-background {
+    border-radius: 25px;
+}
+
+.filmfinder-desc-background {
     border-radius: 25px;
 }
